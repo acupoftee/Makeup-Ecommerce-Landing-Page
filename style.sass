@@ -10,6 +10,7 @@ $ruby: #96051f
 
 // body text color
 $onyx: #373443
+$rose: rgb(255, 170, 184)
 
 // color button margins
 $buttonOffset: 40px
@@ -35,17 +36,21 @@ $buttonOffset: 40px
     text-transform: uppercase
     color: rgb(31, 31, 31)
     letter-spacing: 2px
-    transition: all 0.5s ease
+    transition: all 0.3s ease
     &:hover 
-        color: pink
+        background: $rose
+        color: $onyx
+        border-radius: 200px
 
 .navbar a:last-child
     background: $onyx
     color: white
     border-radius: 200px
-    transition: all 0.5s ease
+    transition: all 0.3s ease
     &:hover 
-        color: pink
+        background: $rose
+        color: $onyx
+        border-radius: 200px
 
 .section 
     position: absolute
@@ -78,7 +83,7 @@ hr
     color: $onyx
 
 .highlight 
-    background: rgb(255, 170, 184)
+    background: $rose
     padding: 2px 4px
 
 .title 

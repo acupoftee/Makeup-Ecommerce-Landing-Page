@@ -21,20 +21,24 @@
   text-transform: uppercase;
   color: #1f1f1f;
   letter-spacing: 2px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .navbar a:hover {
-  color: pink;
+  background: #ffaab8;
+  color: #373443;
+  border-radius: 200px;
 }
 
 .navbar a:last-child {
   background: #373443;
   color: white;
   border-radius: 200px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .navbar a:last-child:hover {
-  color: pink;
+  background: #ffaab8;
+  color: #373443;
+  border-radius: 200px;
 }
 
 .section {
