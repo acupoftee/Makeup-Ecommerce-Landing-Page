@@ -175,9 +175,19 @@ hr {
   left: 80px;
 }
 
+#myth {
+  background: #ed7c67;
+  left: 120px;
+}
+
+#candy {
+  background: #ff4f73;
+  left: 160px;
+}
+
 #ruby {
   background: #96051f;
-  left: 120px;
+  left: 200px;
 }
 
 .background {

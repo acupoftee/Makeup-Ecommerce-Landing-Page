@@ -18,6 +18,8 @@ let currentImageIndex = 0;
 let magicalImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT1M_640x600_`;
 let luxeImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT18_640x600_`;
 let oysterImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT07_640x600_`;
+let mythImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT1A_640x600_`;
+let candyImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT27_640x600_`;
 let rubyImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT32_640x600_`;
 
 function magicalColor() {
@@ -30,6 +32,14 @@ function luxeColor() {
 
 function oysterColor() {
     updatePage(oysterImageRoot, "#fed4d5");
+}
+
+function mythColor() {
+    updatePage(mythImageRoot, "#ed7c67");
+}
+
+function candyColor() {
+    updatePage(candyImageRoot, "#ff4f73");
 }
 
 function rubyColor() {
