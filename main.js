@@ -1,7 +1,7 @@
+// elements to manipulate
 let lipglassPicture = document.getElementsByClassName('product')[0];
 let background = document.getElementsByClassName('background')[0];
 let titles = document.getElementsByClassName('title')[0];
-//let gif = document.getElementsByClassName('product-gif')[0];
 let miniImages = document.getElementsByClassName('miniImage')
 
 // mini images
@@ -11,46 +11,43 @@ let thirdImage = document.getElementById('third');
 let fourthImage = document.getElementById('fourth');
 let fifthImage = document.getElementById('fifth');
 
+// tracks current image
 let currentImageIndex = 0;
 
+// product image roots
 let magicalImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT1M_640x600_`;
 let luxeImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT18_640x600_`;
 let oysterImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT07_640x600_`;
 let rubyImageRoot = `https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT32_640x600_`;
 
 function magicalColor() {
-    //lipglassPicture.src = "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT1M_640x600_0.jpg";
-    lipglassPicture.src = magicalImageRoot + currentImageIndex + '.jpg';
-    background.style.backgroundColor = "#dc8289";
-    titles.style.color = "#dc8289";
-    updateMiniImages(magicalImageRoot);
+    updatePage(magicalImageRoot, "#dc8289");
 }
 
 function luxeColor() {
-    //lipglassPicture.src = "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT18_640x600_0.jpg";
-    lipglassPicture.src = luxeImageRoot + currentImageIndex + '.jpg';
-    background.style.backgroundColor = "#fc7675";
-    titles.style.color = "#fc7675";
-    updateMiniImages(luxeImageRoot);
+    updatePage(luxeImageRoot, "#fc7675");
 }
 
 function oysterColor() {
-    //lipglassPicture.src = "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT07_640x600_0.jpg";
-    lipglassPicture.src = oysterImageRoot + currentImageIndex + '.jpg';
-    background.style.backgroundColor = "#fed4d5";
-    titles.style.color = "#fed4d5";
-    updateMiniImages(oysterImageRoot);
+    updatePage(oysterImageRoot, "#fed4d5");
 }
 
 function rubyColor() {
-    //lipglassPicture.src = "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT32_640x600_0.jpg";
-    lipglassPicture.src = rubyImageRoot + currentImageIndex + '.jpg';
-    background.style.backgroundColor = "#96051f";
-    titles.style.color = "#96051f";
-    updateMiniImages(rubyImageRoot);
+    updatePage(rubyImageRoot, "#96051f");
 }
 
 
+/**
+ * Updates the page content on click
+ * @param {string} root product image root
+ * @param {string} color page colors
+ */
+function updatePage(root, color) {
+    lipglassPicture.src = root + currentImageIndex + '.jpg';
+    background.style.backgroundColor = color;
+    titles.style.color = color;
+    updateMiniImages(root);
+}
 /**
  * Loops through all mini image elements and updates them 
  * accordingly
