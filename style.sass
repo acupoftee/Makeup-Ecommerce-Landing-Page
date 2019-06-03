@@ -1,0 +1,175 @@
+// fonts
+$big: 'Work Sans', sans-serif
+$regular: 'Open Sans', sans-serif
+
+// lipgloss colors
+$magical: #dc8289
+$luxe: #fc7675
+$oyster: #fed4d5
+$ruby: #96051f
+
+// body text color
+$onyx: #373443
+
+// color button margins
+$buttonOffset: 40px
+
+.container 
+    width: 900px
+    height: 650px
+    margin: 15% auto
+    position: relative
+    box-shadow: 4px 10px 20px rgba($onyx,  .4)
+
+.navbar 
+    display: block
+    float: right
+    font-family: $regular
+    margin: 1em
+    margin-top: 3em
+    font-size: 12px
+
+.navbar a 
+    padding: 13px
+    text-decoration: none
+    text-transform: uppercase
+    color: rgb(31, 31, 31)
+    letter-spacing: 2px
+    transition: all 0.5s ease
+    &:hover 
+        color: pink
+
+.navbar a:last-child
+    background: $onyx
+    color: white
+    border-radius: 200px
+    transition: all 0.5s ease
+    &:hover 
+        color: pink
+
+.section 
+    position: absolute
+    margin-top: 5%
+    margin-left: 5%
+    width: 100%
+    height: 80%
+
+h1
+    font-family: $big
+    color: $magical
+    text-transform: uppercase
+    font-size: 3em
+    text-shadow: 2px 1px 0px rgba($onyx, .9)
+
+h2 
+    font-family: $regular
+    font-size: 1.2em
+    text-transform: uppercase
+    letter-spacing: 3px
+    line-height: 10px
+    color: $onyx
+p
+    font-family: $regular
+    color: $onyx
+    font-size: .6em
+    text-transform: uppercase
+    letter-spacing: 3px
+hr 
+    color: $onyx
+
+.highlight 
+    background: rgb(255, 170, 184)
+    padding: 2px 4px
+
+.title 
+    margin-top: 155px
+    transition: all 0.5s ease
+
+.subtitle 
+    margin-top: -30px
+
+.product 
+    height: 360px
+    width: 360px
+    position: absolute
+    right: 110px
+    top: 100px
+    border-radius: 100%
+    z-index: -2
+
+.desc 
+    position: absolute
+    top: 100%
+
+.black-header
+    position: absolute
+    margin-top: 15%
+    color: $onyx
+
+.tagline 
+    position: absolute
+    color: white
+    opacity: 0.4
+    font-size: 2em
+    white-space: nowrap
+    right: -120px
+    top: 220px
+    transform: rotate(90deg)
+
+.trending-desc
+    position: absolute
+    margin-top: 10px
+    margin-right: 60%
+    line-height: 15px
+    text-transform: none
+
+.button 
+    position: absolute
+    width: 15px
+    height: 15px
+    border-radius: 100%
+    margin-top: 200px
+    transition: all 0.2s ease
+    &:hover 
+        cursor: pointer
+        transform: scale(1.5)
+
+.image-carousel
+    position: absolute
+    margin-top: 130px
+    img
+        transition: all 0.2s ease
+        width: 40px
+        height: 40px  
+        border-radius: 100%
+        margin-right: 20px
+        &:hover 
+            cursor: pointer
+            transform: scale(1.3)
+
+#magical 
+    background: $magical
+
+#luxe 
+    background: $luxe
+    left: $buttonOffset
+
+#oyster 
+    background: $oyster
+    left: $buttonOffset * 2
+
+#ruby 
+    background: $ruby
+    left: $buttonOffset * 3
+
+.background 
+    position: fixed
+    height: 100%
+    width: 45%
+    bottom: 0px
+    right: 0px
+    background: $magical
+    z-index: -1
+    clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%)
+    -webkit-clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%)
+    transition: all 0.5s ease
